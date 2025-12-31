@@ -99,14 +99,21 @@ JWT token is stored in localStorage
 Dashboard and task APIs are protected using middleware
 
 ## 🧩 API Endpoints
-Method	Route	  Description
-POST	/api/register	Register user
-POST	/api/login	Login user
-Tasks
-Method	Route	 Description
-GET	/api/tasks	Fetch user tasks
-POST	/api/tasks	Create task
-PUT	/api/tasks/:id	Update task
-DELETE	/api/tasks/:id	Delete task
+### Authentication
+
+| Method | Route | Description |
+|--------|-------|-------------|
+| POST   | /api/register | Register a new user |
+| POST   | /api/login    | Login user and return JWT token |
+
+### Tasks
+
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET    | /api/tasks      | Fetch all tasks for logged-in user |
+| POST   | /api/tasks      | Create a new task |
+| PUT    | /api/tasks/:id  | Update an existing task |
+| DELETE | /api/tasks/:id  | Delete a task |
+
 
 
